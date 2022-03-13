@@ -1,0 +1,14 @@
+[ballerina.log]
+format = "json"
+
+[arun.ballerina_ms_sample.customer_service]
+USER = "rootUser"
+PASSWORD = "rootPass"
+URL = "jdbc:h2:file:./target/customers"
+[arun.ballerina_ms_sample.customer_service.server]
+port = 8090
+
+[[ballerina.log.modules]]
+name = "arun/ballerina_ms_sample.customer_service"
+format = "json"
+level = "DEBUG"
